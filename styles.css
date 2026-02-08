@@ -1,0 +1,81 @@
+body {
+  background-color: #fff0f0;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ff3f8e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.headline {
+  font-size: 2.5rem;
+  color: #ff3366;
+  margin-bottom: 20px;
+}
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+  animation: heartBeat 1s infinite;
+}
+
+.heart-shape {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ff3366;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.heart-shape:nth-child(2) {
+  top: -50px;
+  left: 50px;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #ff3366;
+}
+
+.pop-btn {
+  background-color: #ff3366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.pop-btn:hover {
+  background-color: #ff1f5b;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
